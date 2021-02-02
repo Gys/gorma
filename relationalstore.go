@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/goadesign/goa/dslengine"
+	"github.com/Gys/goa/dslengine"
 )
 
 // NewRelationalStoreDefinition returns an initialized

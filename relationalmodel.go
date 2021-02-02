@@ -8,9 +8,9 @@ import (
 
 	"bitbucket.org/pkg/inflect"
 
-	"github.com/goadesign/goa/design"
-	"github.com/goadesign/goa/dslengine"
-	"github.com/goadesign/goa/goagen/codegen"
+	"github.com/Gys/goa/design"
+	"github.com/Gys/goa/dslengine"
+	"github.com/Gys/goa/goagen/codegen"
 	"github.com/jinzhu/inflection"
 )
 

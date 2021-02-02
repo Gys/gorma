@@ -1,9 +1,9 @@
 package dsl
 
 import (
-	"github.com/goadesign/goa/design"
-	"github.com/goadesign/goa/dslengine"
-	"github.com/goadesign/gorma"
+	"github.com/Gys/goa/design"
+	"github.com/Gys/goa/dslengine"
+	"github.com/Gys/gorma"
 )
 
 func init() {

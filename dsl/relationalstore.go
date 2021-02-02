@@ -1,8 +1,8 @@
 package dsl
 
 import (
-	"github.com/goadesign/goa/dslengine"
-	"github.com/goadesign/gorma"
+	"github.com/Gys/goa/dslengine"
+	"github.com/Gys/gorma"
 )
 
 // Store represents a database.  Gorma lets you specify

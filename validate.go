@@ -3,7 +3,7 @@ package gorma
 import (
 	"fmt"
 
-	"github.com/goadesign/goa/dslengine"
+	"github.com/Gys/goa/dslengine"
 )
 
 // Validate tests whether the StorageGroup definition is consistent.

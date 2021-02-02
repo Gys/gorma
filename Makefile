@@ -12,8 +12,8 @@
 DIRS=$(shell go list -f {{.Dir}} ./... | grep -v /example)
 DEPEND=\
 	bitbucket.org/pkg/inflect \
-	github.com/goadesign/goa/... \
-	github.com/goadesign/goa.design/tools/mdc \
+	github.com/Gys/goa/... \
+	github.com/Gys/goa.design/tools/mdc \
 	github.com/golang/lint/golint \
 	github.com/onsi/ginkgo \
 	github.com/onsi/ginkgo/ginkgo \
@@ -28,13 +28,13 @@ all: depend lint test
 
 docs:
 	@go get -v github.com/spf13/hugo
-	@cd /tmp && git clone https://github.com/goadesign/goa.design && cd goa.design && rm -rf content/reference public && make docs && hugo
+	@cd /tmp && git clone https://github.com/Gys/goa.design && cd goa.design && rm -rf content/reference public && make docs && hugo
 	@rm -rf public
 	@mv /tmp/goa.design/public public
 	@rm -rf /tmp/goa.design
 
 depend:
-	@export GO111MODULE=on && go get -v github.com/goadesign/goa.design/tools/godoc2md
+	@export GO111MODULE=on && go get -v github.com/Gys/goa.design/tools/godoc2md
 	@go get -v $(DEPEND)
 	@go install $(DEPEND)
 
